@@ -62,6 +62,10 @@
         font-family: "ADLaM Display", serif;
       }
 
+      .bg-img {
+        background: url("/c1-assets/cat-big.png") no-repeat center;
+      }
+
       .animate-heading {
         animation: leftToRight 2s ease-out;
       }
@@ -88,29 +92,33 @@
 
   <body class="sora">
     <!-- Header Section Started -->
-    <header class="max-w-[1600px] mx-auto bg-[#EBE3C8]">
+    <header class="max-w-[1600px] mx-auto">
       <nav
-        class="p-4 flex items-center justify-between border-2 border-green-300 lg:border-0"
+        class="bg-[#FFF9F4] p-4 flex items-center justify-between border-2 border-neutral-500 lg:border-0"
       >
-        <figure>
-          <img src="c2-assets/logo-header.png" alt="Logo" />
+        <figure class="flex gap-3 items-center">
+          <img src="c1-assets/logo-header.png" alt="Logo" class="w-full" />
+          <h1 class="text-xl hidden md:block lg:block">
+            Browses<span class="text-3xl text-yellow-300">4</span>Pets
+          </h1>
         </figure>
         <div class="hidden lg:block">
-          <ul class="text-xl font-semibold flex gap-4">
-            <li><a href="#" class="">Product</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact Us</a></li>
+          <ul class="text-xl font-medium flex gap-4">
+            <li><a href="#" class="">Find a pet</a></li>
+            <li><a href="#">Breeds</a></li>
+            <li><a href="#">Contact us</a></li>
           </ul>
         </div>
         <div class="hidden lg:block">
           <div class="flex items-center gap-4 text-xl">
+            <i class="ri-notification-3-line"></i>
             <i class="ri-search-line"></i>
-            <i class="ri-shopping-cart-fill"></i>
-            <button class="border-2 border-green-400 px-4 py-2 rounded-2xl">
+
+            <button class="border-2 border-yellow-400 px-4 py-2 rounded-2xl">
               Login
             </button>
             <button
-              class="animate-bounce bg-green-700 text-white px-6 py-2 rounded-2xl"
+              class="animate-bounce bg-[#FFDC26] text-neutral-600 px-6 py-2 rounded-2xl"
             >
               Register
             </button>
@@ -121,32 +129,485 @@
         </div>
       </nav>
 
-      <section
-        class="w-full lg:w-9/12 mx-auto mt-14 flex flex-col items-center gap-6 px-5"
-      >
-        <div class="text-center w-full lg:w-11/12 mx-auto">
+      <section class="w-full lg:w-11/12 h-[700px] mx-auto mt-14 px-5 bg-img">
+        <div class="text-left lg:w-11/12 mx-auto space-y-5">
           <h1 class="text-4xl lg:text-6xl font-bold mb-3.5 animate-heading">
-            Freshness
-            <span class="text-green-400"
-              >You Can <br />
-              Count</span
-            >
-            On, Prices You'll Love!
+            Pamper Your
+            <span class="text-green-400">Pet , <br /> </span>
+            Because They Deserve <br />
+            the Bes
           </h1>
-          <p class="text-xl text-neutral-700">
-            Shop your daily essentials at unbeatable prices. From fresh produce
-            to pantry staples, we've got you covered every day!
+          <p class="text-xl text-neutral-700 w-2/3">
+            Discover a world of treats, toys, and essentials handpicked for your
+            furry friends. Shop now and make tails wag with joy!
           </p>
+
+          <button
+            class="bg-[#FFDC26] px-4 py-2 text-xl text-slate-700 rounded-xl"
+          >
+            Find a pet
+          </button>
         </div>
-        <figure>
-          <img
-            src="c2-assets/hero-vegetables.png"
-            alt="hero banner"
-            class="w-full"
-          />
-        </figure>
       </section>
     </header>
     <!-- Header Section Ended -->
+
+    <!-- Main Section Started -->
+    <main class="max-w-[1600px] mx-auto">
+      <!-- Services section started-->
+      <section class="mx-5 my-10">
+        <h3 class="text-4xl font-bold text-green-400 mb-10">
+          Browse By Categories
+        </h3>
+
+        <div class="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-6 gap-4">
+          <div
+            class="bg-[#F9DF8A] p-6 lg:p-10 flex flex-col items-center gap-4 rounded-2xl"
+          >
+            <figure class="bg-white p-5 rounded-full">
+              <img
+                src="c1-assets/dog-cartoon.png"
+                alt="Services"
+                class="w-full"
+              />
+            </figure>
+            <h4 class="text-2xl font-semibold">Dog</h4>
+            <p class="text-xl text-neutral-500 text-justify">3 items</p>
+          </div>
+          <div
+            class="bg-[#F9DF8A] p-6 lg:p-10 flex flex-col items-center gap-4 rounded-2xl"
+          >
+            <figure class="bg-white p-5 rounded-full">
+              <img
+                src="c1-assets/cat-cartoon.png"
+                alt="Services"
+                class="w-full"
+              />
+            </figure>
+            <h4 class="text-2xl font-semibold">Cat</h4>
+            <p class="text-xl text-neutral-500 text-justify">3 items</p>
+          </div>
+          <div
+            class="bg-[#F9DF8A] p-6 lg:p-10 flex flex-col items-center gap-4 rounded-2xl"
+          >
+            <figure class="bg-white p-5 rounded-full">
+              <img
+                src="c1-assets/bird-cartoon.png "
+                alt="Services"
+                class="w-full"
+              />
+            </figure>
+            <h4 class="text-2xl font-semibold">Birds</h4>
+            <p class="text-xl text-neutral-500 text-justify">3 items</p>
+          </div>
+          <div
+            class="bg-[#F9DF8A] p-6 lg:p-10 flex flex-col items-center gap-4 rounded-2xl"
+          >
+            <figure class="bg-white p-5 rounded-full">
+              <img
+                src="c1-assets/mouse-cartoon.png"
+                alt="Services"
+                class="w-full"
+              />
+            </figure>
+            <h4 class="text-2xl font-semibold">Small Pet</h4>
+            <p class="text-xl text-neutral-500 text-justify">3 items</p>
+          </div>
+          <div
+            class="bg-[#F9DF8A] p-6 lg:p-10 flex flex-col items-center gap-4 rounded-2xl"
+          >
+            <figure class="bg-white p-5 rounded-full">
+              <img
+                src="c1-assets/rabbit-cartoon.png"
+                alt="Services"
+                class="w-full"
+              />
+            </figure>
+            <h4 class="text-2xl font-semibold">Rabbit</h4>
+            <p class="text-xl text-neutral-500 text-justify">3 items</p>
+          </div>
+          <div
+            class="bg-[#F9DF8A] p-6 lg:p-10 flex flex-col items-center gap-4 rounded-2xl"
+          >
+            <figure class="bg-white p-5 rounded-full">
+              <img
+                src="c1-assets/fish-cartoon.png"
+                alt="Services"
+                class="w-full"
+              />
+            </figure>
+            <h4 class="text-2xl font-semibold">Fish</h4>
+            <p class="text-xl text-neutral-500 text-justify">3 items</p>
+          </div>
+        </div>
+      </section>
+      <!-- Services section ended here-->
+
+      <!-- Products section started here-->
+      <section class="bg-[#EBE3C8] mx-4 py-14 px-4 lg:px-8 my-10">
+        <h3 class="text-4xl font-bold text-green-400 mb-10">
+          Popular Products
+        </h3>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-y-4 lg:gap-3">
+          <div
+            class="rounded-xl bg-gradient-to-r from-green-400 via-green-500 to-green-100 relative"
+          >
+            <figure
+              class="absolute bottom-0 right-0 w-4/12 md:w-3/12 lg:w-8/12 xl:w-6/12"
+            >
+              <img
+                src="c1-assets/cute-pet-mid.png"
+                alt="offer"
+                class="w-full"
+              />
+            </figure>
+
+            <div
+              class="w-4/5 md:w-full px-10 pt-10 pb-20 lg:py-5 flex flex-col items-start gap-2.5"
+            >
+              <h4 class="text-xl font-semibold">T-Shirt For Dogs</h4>
+              <p class="w-3/5 text-justify">
+                Discover a world of treats, toys, and essentials handpicked for
+                your furry friends. Shop now and make tails wag with joy!
+              </p>
+              <button class="bg-white px-4 py-2 rounded-xl">Shop Now</button>
+            </div>
+          </div>
+
+          <div
+            class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 col-span-2 gap-2.5"
+          >
+            <div
+              class="bg-white py-4 px-2 flex gap-3.5 items-center rounded-xl"
+            >
+              <figure class="bg-[#EBE3C8] rounded-xl p-2">
+                <img
+                  src="c1-assets/dog-cartoon.png"
+                  alt="onion"
+                  class="w-full"
+                />
+              </figure>
+              <div>
+                <div class="flex gap-2">
+                  <i class="ri-star-fill"></i>
+                  <p>4.5</p>
+                </div>
+                <h5 class="text-base lg:text-lg font-semibold">Pet Bed</h5>
+                <p class="font-medium text-sm">$39.99</p>
+              </div>
+            </div>
+            <div
+              class="bg-white py-4 px-2 flex gap-3.5 items-center rounded-xl"
+            >
+              <figure class="bg-[#EBE3C8] rounded-xl p-2">
+                <img
+                  src="c1-assets/dog-cartoon.png"
+                  alt="onion"
+                  class="w-full"
+                />
+              </figure>
+              <div>
+                <div class="flex gap-2">
+                  <i class="ri-star-fill"></i>
+                  <p>4.5</p>
+                </div>
+                <h5 class="text-base lg:text-lg font-semibold">Pet Bed</h5>
+                <p class="font-medium text-sm">$39.99</p>
+              </div>
+            </div>
+            <div
+              class="bg-white py-4 px-2 flex gap-3.5 items-center rounded-xl"
+            >
+              <figure class="bg-[#EBE3C8] rounded-xl p-2">
+                <img
+                  src="c1-assets/dog-cartoon.png"
+                  alt="onion"
+                  class="w-full"
+                />
+              </figure>
+              <div>
+                <div class="flex gap-2">
+                  <i class="ri-star-fill"></i>
+                  <p>4.5</p>
+                </div>
+                <h5 class="text-base lg:text-lg font-semibold">Pet Bed</h5>
+                <p class="font-medium text-sm">$39.99</p>
+              </div>
+            </div>
+            <div
+              class="bg-white py-4 px-2 flex gap-3.5 items-center rounded-xl"
+            >
+              <figure class="bg-[#EBE3C8] rounded-xl p-2">
+                <img
+                  src="c1-assets/dog-cartoon.png"
+                  alt="onion"
+                  class="w-full"
+                />
+              </figure>
+              <div>
+                <div class="flex gap-2">
+                  <i class="ri-star-fill"></i>
+                  <p>4.5</p>
+                </div>
+                <h5 class="text-base lg:text-lg font-semibold">Pet Bed</h5>
+                <p class="font-medium text-sm">$39.99</p>
+              </div>
+            </div>
+            <div
+              class="bg-white py-4 px-2 flex gap-3.5 items-center rounded-xl"
+            >
+              <figure class="bg-[#EBE3C8] rounded-xl p-2">
+                <img
+                  src="c1-assets/dog-cartoon.png"
+                  alt="onion"
+                  class="w-full"
+                />
+              </figure>
+              <div>
+                <div class="flex gap-2">
+                  <i class="ri-star-fill"></i>
+                  <p>4.5</p>
+                </div>
+                <h5 class="text-base lg:text-lg font-semibold">Pet Bed</h5>
+                <p class="font-medium text-sm">$39.99</p>
+              </div>
+            </div>
+            <div
+              class="bg-white py-4 px-2 flex gap-3.5 items-center rounded-xl"
+            >
+              <figure class="bg-[#EBE3C8] rounded-xl p-2">
+                <img
+                  src="c1-assets/dog-cartoon.png"
+                  alt="onion"
+                  class="w-full"
+                />
+              </figure>
+              <div>
+                <div class="flex gap-2">
+                  <i class="ri-star-fill"></i>
+                  <p>4.5</p>
+                </div>
+                <h5 class="text-base lg:text-lg font-semibold">Pet Bed</h5>
+                <p class="font-medium text-sm">$39.99</p>
+              </div>
+            </div>
+            <div
+              class="bg-white py-4 px-2 flex gap-3.5 items-center rounded-xl"
+            >
+              <figure class="bg-[#EBE3C8] rounded-xl p-2">
+                <img
+                  src="c1-assets/dog-cartoon.png"
+                  alt="onion"
+                  class="w-full"
+                />
+              </figure>
+              <div>
+                <div class="flex gap-2">
+                  <i class="ri-star-fill"></i>
+                  <p>4.5</p>
+                </div>
+                <h5 class="text-base lg:text-lg font-semibold">Pet Bed</h5>
+                <p class="font-medium text-sm">$39.99</p>
+              </div>
+            </div>
+            <div
+              class="bg-white py-4 px-2 flex gap-3.5 items-center rounded-xl"
+            >
+              <figure class="bg-[#EBE3C8] rounded-xl p-2">
+                <img
+                  src="c1-assets/dog-cartoon.png"
+                  alt="onion"
+                  class="w-full"
+                />
+              </figure>
+              <div>
+                <div class="flex gap-2">
+                  <i class="ri-star-fill"></i>
+                  <p>4.5</p>
+                </div>
+                <h5 class="text-base lg:text-lg font-semibold">Pet Bed</h5>
+                <p class="font-medium text-sm">$39.99</p>
+              </div>
+            </div>
+
+            <div class="hidden md:block lg:block">
+              <div
+                class="bg-white py-4 px-2 flex gap-3.5 items-center rounded-xl"
+              >
+                <figure class="bg-[#EBE3C8] rounded-xl p-2">
+                  <img
+                    src="c1-assets/dog-cartoon.png"
+                    alt="potato"
+                    class="w-full"
+                  />
+                </figure>
+                <div>
+                  <div class="flex gap-2">
+                    <i class="ri-star-fill"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5 class="text-base lg:text-xl font-semibold">Pet Dog</h5>
+                  <p class="font-medium">$39.99</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Products section ended here-->
+
+      <!-- Offers section started here-->
+      <section class="mx-4 my-10">
+        <h3 class="text-4xl font-bold text-green-700 mb-10">
+          Everyday low Price
+        </h3>
+
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-5">
+          <div
+            class="lg:col-span-3 bg-gradient-to-r from-[#ACD2FD] to-[#F8CCFB] flex items-center justify-between p-5 rounded-xl"
+          >
+            <div class="flex flex-col items-start gap-3.5 w-full">
+              <p class="text-xl font-light">Under Price</p>
+              <h3 class="text-2xl font-medium">Pet Grooming Mitt</h3>
+              <p class="text-white text-2xl font-medium">(Easy Hair Removal)</p>
+              <p class="text-6xl font-bold">$7.99</p>
+            </div>
+
+            <figure class="">
+              <img src="c1-assets/cute-dog-mid.png" alt="dawat-mock-up" />
+            </figure>
+          </div>
+          <div
+            class="lg:col-span-2 bg-gradient-to-r from-[#F9DF8A] to-[#FFF9F4] flex items-center justify-between p-5 rounded-xl"
+          >
+            <div class="flex flex-col items-start gap-3.5 w-full">
+              <p class="text-xl font-light">Under Price</p>
+              <h3 class="text-2xl font-medium">Pet Grooming Mitt</h3>
+              <p class="text-white text-2xl font-medium">(Easy Hair Removal)</p>
+              <p class="text-6xl text-[#d1cfc6] font-bold">$7.99</p>
+            </div>
+
+            <figure class="">
+              <img src="c1-assets/cute-pet-mid.png" alt="dawat-mock-up" />
+            </figure>
+          </div>
+        </div>
+      </section>
+      <!-- Offers section ended here-->
+
+      <!-- Grocery News section started here-->
+      <section class="relative mt-96 md:mt-56 lg:mt-80">
+        <section
+          class="bg-[#FFF9F4] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center px-0 lg:px-10 p-5 gap-4 lg:gap-10 rounded-xl w-9/12 mx-auto absolute -top-80 left-16 md:-top-40 lg:-top-60 md:left-28 lg:left-40"
+        >
+          <figure class="">
+            <img
+              src="c1-assets/cute-pet-mid.png"
+              alt="vegetable-busket"
+              class="w-1/2"
+            />
+          </figure>
+
+          <div class="flex flex-col items-start gap-3 lg:gap-5 p-5">
+            <h4 class="text-green-600 text-3xl lg:text-4xl font-bold">
+              Get Awesome News!
+            </h4>
+            <p class="text-lg lg:text-xl">
+              Exclusive training tips, ticks, product deals and more.
+            </p>
+            <label class="input-bordered flex items-center gap-0 input">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                class="h-6 w-6 opacity-90"
+              >
+                <path
+                  d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z"
+                />
+                <path
+                  d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z"
+                />
+              </svg>
+              <input
+                type="text"
+                class="pl-5 py-2 rounded-xl w-11/12 lg:w-full"
+                placeholder="Type your email"
+              />
+            </label>
+
+            <button
+              class="px-7 lg:px-5 py-1 lg:py-2 bg-[#FFDC26] text-sm lg:text-base lg:font-medium font-medium rounded-xl"
+            >
+              Subscribe
+            </button>
+          </div>
+        </section>
+
+        <!-- Footer Section Started -->
+
+        <footer
+          class="max-w-[1600px] mx-auto bg-[#FFDC2680] px-10 pt-96 md:pt-60 lg:pt-80 pb-16"
+        >
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+            <aside class="flex flex-col items-start gap-2.5">
+              <figure class="flex gap-3 items-center">
+                <img
+                  src="c1-assets/logo-footer.png"
+                  alt="logo-footer"
+                  class="w-full"
+                />
+                <h1 class="text-xl hidden md:block lg:block">
+                  Browses<span class="text-3xl text-yellow-300">4</span>Pets
+                </h1>
+              </figure>
+              <p>
+                Discover a world of treats, toys, and essentials handpicked for
+                your furry friends
+                <br />
+                Providing reliable vegetables since 1992
+              </p>
+            </aside>
+            <nav class="flex flex-col gap-2.5">
+              <h6 class="footer-title">Services</h6>
+              <a class="link link-hover">Branding</a>
+              <a class="link link-hover">Design</a>
+              <a class="link link-hover">Marketing</a>
+              <a class="link link-hover">Advertisement</a>
+            </nav>
+            <nav class="">
+              <h6 class="footer-title">Follow Us</h6>
+              <div class="flex gap-2.5">
+                <a class="link link-hover bg-white text-stone-600 rounded-xl">
+                  <i class="ri-facebook-fill p-1"></i>
+                </a>
+                <a class="link link-hover bg-white text-stone-600 rounded-xl">
+                  <i class="ri-instagram-line p-1"></i>
+                </a>
+                <a class="link link-hover bg-white text-stone-600 rounded-xl">
+                  <i class="ri-linkedin-fill p-1"></i>
+                </a>
+                <a class="link link-hover bg-white text-stone-600 rounded-xl">
+                  <i class="ri-youtube-fill p-1"></i>
+                </a>
+              </div>
+            </nav>
+          </div>
+        </footer>
+        <!-- Footer Section Ended -->
+      </section>
+      <!-- Grocery News section ended here-->
+    </main>
+    <!-- Main Section Ended -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
